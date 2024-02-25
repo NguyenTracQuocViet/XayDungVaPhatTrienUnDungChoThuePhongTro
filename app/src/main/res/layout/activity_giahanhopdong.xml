@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_green"
+    tools:context=".CapNhat.GiaHanHopDong">
+
+    <TextView
+        android:id="@+id/sophonggh"
+        android:layout_width="298dp"
+        android:layout_height="62dp"
+        android:layout_gravity="fill"
+        android:layout_weight="9"
+        android:background="@drawable/_center"
+        android:gravity="center"
+        android:hint="phong"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/nha"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="415dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="642dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="Gia Hạn Hợp Đồng"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGiahan"
+        android:layout_width="137dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/orange"
+        android:text="Gia Hạn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="383dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="84dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnGiahan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/btnlichgh"
+            android:layout_width="69dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@color/dark_green"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/giahan"
+            android:layout_width="298dp"
+            android:layout_height="62dp"
+            android:layout_gravity="fill"
+            android:layout_weight="9"
+            android:background="@drawable/_center"
+            android:gravity="center"
+            android:hint="Gia Hạn"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnquaylaigh"
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

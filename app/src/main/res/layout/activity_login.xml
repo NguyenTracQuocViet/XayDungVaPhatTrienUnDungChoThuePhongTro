@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuanLyTaiKhoan.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="417dp"
+        android:layout_height="322dp"
+        android:background="@drawable/top_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="124dp"
+            android:text="Ứng Dụng Hỗ Trợ Quản Lý Cho Thuê Nhà Trọ"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="101dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="219dp"
+            app:srcCompat="@drawable/nha3d" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="420dp"
+        android:layout_height="341dp"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/bottom_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="357dp"
+        android:layout_height="418dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="403dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/_login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.551">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout12"
+                android:layout_width="332dp"
+                android:layout_height="92dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:textColorHint="@color/black"
+                app:endIconMode="clear_text"
+                app:helperText="*Bắt Buộc"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.183"
+                app:startIconDrawable="@drawable/user_icon_svgrepo_com"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/usernamelogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="Tài Khoản"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:textSize="23dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout11"
+                android:layout_width="333dp"
+                android:layout_height="90dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:textColorHint="@color/black"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:helperText="*Bắt Buộc"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.588"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout12"
+                app:layout_constraintVertical_bias="0.133"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/lock_24"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordlogin"
+                    android:layout_width="316dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="290dp"
+                    android:layout_marginEnd="33dp"
+                    android:ems="10"
+                    android:hint="Mật Khẩu"
+                    android:inputType="textPassword"
+                    android:longClickable="false"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvDangKy"
+                android:layout_width="198dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="Bạn Chưa Có Tài Khoản, Đăng Ký "
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.572"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout11"
+                app:layout_constraintVertical_bias="0.674"
+                tools:ignore="MissingConstraints,TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/dark_green"
+                android:text="Đăng Nhập"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout11"
+                app:layout_constraintVertical_bias="0.252"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

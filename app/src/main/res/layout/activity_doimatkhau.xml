@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuanLyTaiKhoan.DoiMatKhau">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="424dp"
+        android:layout_height="264dp"
+        android:background="@drawable/top_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="137dp"
+            android:text="Ứng Dụng Hỗ Trợ Quản Lý Cho Thuê Nhà Trọ"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="129dp"
+            android:layout_height="109dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="279dp"
+            app:srcCompat="@drawable/nha3d" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="420dp"
+        android:layout_height="341dp"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/bottom_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="354dp"
+        android:layout_height="447dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.802">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="431dp"
+            android:layout_marginBottom="108dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.644"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="284dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/center"
+                android:gravity="center"
+                android:text="Đổi Mật Khẩu"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/taikhoan"
+                android:layout_width="285dp"
+                android:layout_height="60dp"
+                android:background="@drawable/center"
+                android:drawableStart="@drawable/user_icon_svgrepo_com"
+                android:ems="10"
+                android:inputType="text"
+                android:gravity="center"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/textInputLayout15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.218"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout15"
+                android:layout_width="335dp"
+                android:layout_height="95dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/black"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:helperText="*Bắt Buộc"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintBottom_toTopOf="@+id/textInputLayout13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mkmoi"
+                    android:layout_width="321dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="290dp"
+                    android:layout_marginEnd="33dp"
+                    android:ems="10"
+                    android:hint="Mật Khẩu Mới"
+
+                    android:inputType="textPassword"
+                    android:longClickable="false"
+                    android:textSize="23dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout13"
+                android:layout_width="337dp"
+                android:layout_height="91dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="173dp"
+                android:textColorHint="@color/black"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:helperText="*Bắt Buộc"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.529"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.58"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/remkmoi"
+                    android:layout_width="327dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="290dp"
+                    android:layout_marginEnd="33dp"
+                    android:drawableStart="@drawable/lock_24"
+                    android:drawableEnd="@drawable/password_icon"
+                    android:ems="10"
+                    android:hint=" Nhập Lại Mật Khẩu"
+                    android:inputType="textPassword"
+                    android:longClickable="false"
+                    android:textColorHint="@color/white"
+                    android:textSize="23dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnDoimkmk"
+                android:layout_width="178dp"
+                android:layout_height="46dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/dark_green"
+                android:text="Đổi Mật Khẩu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.238"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout13"
+                app:layout_constraintVertical_bias="0.805"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/btnquaylaidmk"
+                android:layout_width="39dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="273dp"
+                android:background="@color/dark_green"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/btnDoimkmk"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout13"
+                app:layout_constraintVertical_bias="0.801"
+                app:srcCompat="@drawable/return_icon"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

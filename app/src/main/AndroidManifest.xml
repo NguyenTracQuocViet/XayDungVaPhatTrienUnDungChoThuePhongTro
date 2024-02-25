@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuanLyChoThueNhaTro"
+        tools:targetApi="31">
+        <activity
+            android:name=".TrangChu.DoanhThu.DoanhThuTheoThang"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChu.DoanhThu.DoanhThuTheoQuy"
+            android:exported="false" />
+        <activity
+            android:name=".QuanLyTaiKhoan.DoiMatKhau"
+            android:exported="false" />
+        <activity
+            android:name=".CapNhat.CapNhatHoaDon"
+            android:exported="false" />
+        <activity
+            android:name=".CapNhat.SuaThongTinKhach"
+            android:exported="false" />
+        <activity
+            android:name=".CapNhat.GiaHanHopDong"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChu.DoanhThu.DoanhThuTheoNam"
+            android:exported="false" />
+        <activity
+            android:name=".CaiDatActivity.CaiDatGiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CapNhat.SuaPhong"
+            android:exported="false" />
+        <activity
+            android:name=".ThemDialog.ThemKhachThue"
+            android:exported="false" />
+        <activity
+            android:name=".ThemDialog.TaoHoaDon"
+            android:exported="false" />
+        <activity
+            android:name=".ThemDialog.ThongTinPhong"
+            android:exported="false" />
+        <activity
+            android:name=".ThemDialog.TaoHopDong"
+            android:exported="false" />
+        <activity
+            android:name=".ThemDialog.ThemPhong"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChu.DoanhThu.DoanhThuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChu.HoaDonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChu.HopDongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChu.KhachThueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChu.PhongTroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaiDatActivity.CaiDatPhongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuanLyTaiKhoan.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuanLyTaiKhoan.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuanLyTaiKhoan.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

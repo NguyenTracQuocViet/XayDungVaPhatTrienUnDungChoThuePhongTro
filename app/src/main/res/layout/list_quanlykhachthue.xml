@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/list1"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_green">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/khachcard"
+        android:layout_width="353dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp"
+        app:layout_constraintHorizontal_weight="1">
+
+        <RelativeLayout
+            android:layout_width="357dp"
+            android:layout_height="251dp">
+
+            <TextView
+                android:id="@+id/tvkhach"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="12dp"
+                android:drawableStart="@drawable/user_icon_svgrepo_com"
+                android:gravity="center"
+                android:hint="Khách"
+                android:textColor="@color/red"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/gioitinhkhach"
+                android:layout_width="250dp"
+                android:layout_height="39dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/user_icon_svgrepo_com"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="96dp" />
+
+            <TextView
+                android:id="@+id/tvphong1"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="194dp"
+                android:drawableStart="@drawable/nha"
+                android:gravity="center"
+                android:hint="Phong"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/tvsdt"
+                android:layout_width="271dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="102dp"
+                android:drawableStart="@drawable/local_phone"
+                android:gravity="center"
+                android:hint="SĐT"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/tvcccd"
+                android:layout_width="267dp"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="147dp"
+                android:drawableStart="@drawable/hopdong"
+                android:gravity="center"
+                android:hint="cccd"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_green"
+    tools:context=".TrangChu.DoanhThu.DoanhThuTheoThang">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="409dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="2dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="Doanh Thu Theo Tháng"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnHomethang"
+        android:layout_width="58dp"
+        android:layout_height="53dp"
+        android:background="@color/orange"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="MissingConstraints" />
+
+
+    <RelativeLayout
+        android:layout_width="405dp"
+        android:layout_height="252dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.058">
+
+        <Spinner
+            android:id="@+id/spinnerchonthang"
+            android:layout_width="202dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/spinnerchonnamthang"
+            android:layout_marginStart="194dp"
+            android:layout_marginTop="-128dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="592dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="159dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="233dp"
+            android:background="@drawable/_center"
+            android:gravity="center"
+            android:text="Chọn Tháng"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerchonthang"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.525"
+            tools:ignore="NotSibling" />
+
+        <Spinner
+            android:id="@+id/spinnerchonnamthang"
+            android:layout_width="202dp"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="89dp"
+            android:layout_marginEnd="13dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvDoanhthuthang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerchonthang"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="159dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView12"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="233dp"
+
+            android:background="@drawable/_center"
+            android:gravity="center"
+            android:text="Chọn Năm"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerchonnamthang"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.05"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/btnXemthangdoanhthu"
+            android:layout_width="141dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="38dp"
+            android:backgroundTint="@color/orange"
+            android:text="Doanh Thu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.004"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/tvDoanhthuthang"
+            android:layout_width="223dp"
+            android:layout_height="43dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="41dp"
+            android:layout_toEndOf="@+id/btnXemthangdoanhthu"
+            android:background="@drawable/_center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.58"
+            app:layout_constraintTop_toTopOf="@+id/spinnerchonthang"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstviewdoanhthuthang"
+        android:layout_width="376dp"
+        android:layout_height="365dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

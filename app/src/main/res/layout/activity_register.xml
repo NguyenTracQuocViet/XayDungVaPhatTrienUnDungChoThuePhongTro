@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuanLyTaiKhoan.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="424dp"
+        android:layout_height="286dp"
+        android:background="@drawable/top_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="126dp"
+            android:text="Ứng Dụng Hỗ Trợ Quản Lý Cho Thuê Nhà Trọ"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="129dp"
+            android:layout_height="109dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="233dp"
+            app:srcCompat="@drawable/nha3d" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="420dp"
+        android:layout_height="341dp"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/bottom_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="354dp"
+        android:layout_height="447dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.802">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="431dp"
+            android:layout_marginBottom="108dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.644"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout14"
+                android:layout_width="318dp"
+                android:layout_height="99dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="288dp"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.305"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.571"
+                app:helperText="*Bắt Buộc"
+                app:helperTextTextColor="@color/red"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/user_icon_svgrepo_com">
+
+                <EditText
+                    android:id="@+id/usernameRegister"
+                    android:layout_width="302dp"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="290dp"
+                    android:layout_marginEnd="33dp"
+                    android:ems="10"
+                    android:hint="Tài Khoản"
+                    android:inputType="text"
+                    android:textSize="21dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="325dp"
+                android:layout_height="110dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:textColorHint="@color/black"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:layout_constraintBottom_toTopOf="@+id/textInputLayout13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout14"
+                app:layout_constraintVertical_bias="0.0"
+                app:passwordToggleEnabled="true"
+                app:helperText="*Bắt Buộc"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordRegister"
+                    android:layout_width="307dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="290dp"
+                    android:layout_marginEnd="33dp"
+                    android:ems="10"
+                    android:hint="Mật Khẩu"
+                    android:inputType="textPassword"
+                    android:longClickable="false"
+                    android:textSize="21dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout13"
+                android:layout_width="320dp"
+                android:layout_height="94dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="173dp"
+                android:textColorHint="@color/black"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:helperText="*Bắt Buộc"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.392"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.475"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/repassword"
+                    android:layout_width="304dp"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="290dp"
+                    android:layout_marginEnd="33dp"
+                    android:drawableEnd="@drawable/password_icon"
+                    android:ems="10"
+                    android:hint="Nhập Lại Mật Khẩu"
+                    android:inputType="textPassword"
+                    android:longClickable="false"
+                    android:textSize="21dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/dark_green"
+                android:text="Đăng Ký"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout13"
+                app:layout_constraintVertical_bias="0.858" />
+
+            <ImageButton
+                android:id="@+id/imageBtnreturn"
+                android:layout_width="39dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dark_green"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.681"
+                app:layout_constraintStart_toEndOf="@+id/btnRegister"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout13"
+                app:layout_constraintVertical_bias="0.801"
+                app:srcCompat="@drawable/return_icon"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
